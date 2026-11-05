@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Grupo extends Model
 {
+    
     protected $fillable = ['numero_ciclo', 'anio', 'numero_grupo', 'abierto', 'curso_id'];
 
     protected $casts = ['abierto' => 'boolean'];
