@@ -13,4 +13,9 @@ class Curso extends Model
     {
         return $this->hasMany(Grupo::class);
     }
+
+    protected function casts(): array
+    {
+        return ['creditos' => 'integer'];
+    }
 }

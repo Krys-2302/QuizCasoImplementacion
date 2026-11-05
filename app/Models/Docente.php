@@ -8,8 +8,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Docente extends Model
 {
-   
     protected $fillable = ['cod_empleado', 'nombre_empleado', 'apellidos_empleado'];
+
+    protected $casts = ['cod_empleado' => 'integer'];
 
     public function grupos(): BelongsToMany
     {
